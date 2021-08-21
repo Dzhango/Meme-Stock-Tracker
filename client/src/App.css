@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  background-color: #1a1a1c;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.Table {
+  width: 100%;
+  margin: "auto";
+  table-layout: fixed;
+}
+
+.SearchBar {
+  width: 50%;
+  margin: auto;
+  margin-top: 30px; 
+  margin-bottom: 64px;
+}
+/* .SearchBar form {
+  display: flex;
+  justify-content: center;
+} */
+
+#Search {
+  padding-left: 16px;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+}
+
+#Button, #Clear {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid; 
+  border-color: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+table {
+  border-collapse: collapse;
+}
+tr {
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+}
+form:last-child{
+  margin-left: 30px;
+}
+
+::placeholder {
+  color: white
+}
+td {
+  width: 25%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 3rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: white;
+}
